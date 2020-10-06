@@ -1,5 +1,6 @@
 OrderedDictionary {
 	'src\/TelegramBot-Core.package' : #SquotCypressCodeSerializer,
 	'src\/TelegramBot-Examples.package' : #SquotCypressCodeSerializer,
-	'src\/TelegramBot-Tests.package' : #SquotCypressCodeSerializer
+	'src\/TelegramBot-Tests.package' : #SquotCypressCodeSerializer,
+	'src\/BaselineOfTelegramBot.package' : #SquotCypressCodeSerializer
 }

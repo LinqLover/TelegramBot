@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfTelegramBot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfTelegramBot",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
