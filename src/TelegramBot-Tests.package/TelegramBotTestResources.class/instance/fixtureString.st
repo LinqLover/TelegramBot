@@ -1,0 +1,4 @@
+fixtures
+fixtureString
+
+	^ 'Carpe Squeak!'

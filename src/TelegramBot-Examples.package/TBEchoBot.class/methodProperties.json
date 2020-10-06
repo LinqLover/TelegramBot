@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"startWithToken:" : "ct 10/3/2020 15:02" },
+	"instance" : {
+		"answerBlock" : "ct 9/15/2020 15:10",
+		"answerBlock:" : "ct 9/15/2020 15:10",
+		"answerTo:" : "ct 9/15/2020 15:10",
+		"doStart:" : "ct 10/3/2020 15:16",
+		"handleCommand:message:" : "ct 10/3/2020 15:12",
+		"messageReceived:" : "ct 9/15/2020 15:09" } }

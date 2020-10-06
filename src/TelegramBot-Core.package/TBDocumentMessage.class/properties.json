@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:42",
+	"instvars" : [
+		"file" ],
+	"name" : "TBDocumentMessage",
+	"pools" : [
+		 ],
+	"super" : "TBMediaMessage",
+	"type" : "normal" }

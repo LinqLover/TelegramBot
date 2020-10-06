@@ -1,0 +1,4 @@
+private
+textSelector
+
+	^ #text

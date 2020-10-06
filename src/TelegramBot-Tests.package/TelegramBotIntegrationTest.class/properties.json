@@ -1,0 +1,16 @@
+{
+	"category" : "TelegramBot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 21:15",
+	"instvars" : [
+		"client",
+		"bot",
+		"lastMessageId" ],
+	"name" : "TelegramBotIntegrationTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

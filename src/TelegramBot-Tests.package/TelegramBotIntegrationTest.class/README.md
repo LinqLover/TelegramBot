@@ -1,0 +1,1 @@
+I provide some basic acceptance tests of the TelegramBot framework by utilizing the TelegramClient project for exchaning messages between a test bot and a test user. As of today, the TelegramClient project only supports a subset of the message types supported by the bot framework, but it suffices for asserting that messages have arrived on the other end. Fancy, isn't it? :D

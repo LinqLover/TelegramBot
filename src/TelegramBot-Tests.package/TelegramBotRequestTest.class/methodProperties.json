@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"resource" : "ct 10/1/2020 19:09",
+		"resources" : "ct 10/1/2020 19:05",
+		"setUp" : "ct 10/1/2020 19:08",
+		"testParseCommand" : "ct 10/3/2020 18:33",
+		"testReceiveMessage" : "ct 10/1/2020 21:45",
+		"testSendAnimation" : "ct 10/1/2020 20:34",
+		"testSendAudio" : "ct 10/1/2020 20:23",
+		"testSendDocument" : "ct 10/1/2020 21:14",
+		"testSendMessageWithCaption" : "ct 10/1/2020 20:27",
+		"testSendPhoto" : "ct 10/1/2020 20:27",
+		"testSendText" : "ct 10/1/2020 19:51" } }

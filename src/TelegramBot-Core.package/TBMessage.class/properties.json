@@ -1,0 +1,18 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:39",
+	"instvars" : [
+		"text",
+		"chat",
+		"referenceMessage",
+		"truncated",
+		"messageId" ],
+	"name" : "TBMessage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

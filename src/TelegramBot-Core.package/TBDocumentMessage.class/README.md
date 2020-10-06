@@ -1,0 +1,1 @@
+I represent a message in a TelegramBot chat that contains a generic document file.

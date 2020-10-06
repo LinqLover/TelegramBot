@@ -1,0 +1,4 @@
+private
+computeUrl
+
+	^ self subclassResponsibility

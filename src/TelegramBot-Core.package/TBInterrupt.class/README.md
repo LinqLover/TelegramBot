@@ -1,0 +1,1 @@
+I am an interrupt exception that is signaled to inject some logic into a process using #debugException: and can be defered using #deferDuring:when:.

@@ -1,0 +1,1 @@
+I represent an error thas has occured during connecting to the Telegram Bot API. I provide an error code and a description of the error.

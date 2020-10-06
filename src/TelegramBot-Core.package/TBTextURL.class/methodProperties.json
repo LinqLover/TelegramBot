@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"email:" : "ct 10/3/2020 15:27",
+		"mention:" : "ct 10/3/2020 15:27",
+		"phoneNumber:" : "ct 10/3/2020 15:27" },
+	"instance" : {
+		"computeUrl" : "ct 8/30/2020 20:00",
+		"isRedundantForString:" : "ct 9/5/2020 13:35",
+		"isTelegramBotAttribute" : "ct 8/30/2020 19:54",
+		"isTelegramBotCommand" : "ct 9/5/2020 14:52",
+		"isTelegramBotMention" : "ct 10/5/2020 22:52",
+		"url:" : "ct 10/3/2020 20:43",
+		"urlChanged" : "ct 8/30/2020 19:59" } }

@@ -1,0 +1,1 @@
+I represent a contact link in a TelegramBot message. The contact link can be either a phone number of an email address at the moment.

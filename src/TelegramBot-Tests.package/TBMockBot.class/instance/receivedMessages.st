@@ -1,0 +1,4 @@
+accessing
+receivedMessages
+
+	^ receivedMessages

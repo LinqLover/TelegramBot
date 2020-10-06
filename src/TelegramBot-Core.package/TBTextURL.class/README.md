@@ -1,0 +1,1 @@
+I represent a text link attribute in a TelegramBot message that is special to the Telegram system, such as bot commands, tags, etc.

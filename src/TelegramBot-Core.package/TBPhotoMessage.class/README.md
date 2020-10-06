@@ -1,0 +1,1 @@
+I represent a message in a TelegramBot chat that contains an photo, represented by a subinstance of Form.

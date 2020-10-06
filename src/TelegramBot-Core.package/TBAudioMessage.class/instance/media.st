@@ -1,0 +1,4 @@
+accessing
+media
+
+	^ self sound

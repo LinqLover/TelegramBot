@@ -1,0 +1,1 @@
+I am a simple example bot that echos every message that is sent to it. In addition, I implement the /start command that is displayed to users in the app before they send their first message to me.

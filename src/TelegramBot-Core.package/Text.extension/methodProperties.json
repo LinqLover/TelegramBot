@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asTelegramBotMessageFor:" : "ct 9/9/2020 20:43",
+		"removeAttributesThat:replaceAttributesThat:by:" : "ct 9/29/2020 15:18",
+		"tbPrintStringAbsolutelyLimitedTo:" : "ct 8/31/2020 02:44",
+		"tbWithoutLineEndings" : "ct 9/9/2020 12:15" } }

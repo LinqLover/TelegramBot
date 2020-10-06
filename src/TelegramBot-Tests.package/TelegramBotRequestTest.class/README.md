@@ -1,0 +1,1 @@
+I provide tests for requests handling logic of a TelegramBot, instantiated using its TBMockBot subclass.

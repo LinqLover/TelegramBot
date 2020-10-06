@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"findDeltaFirst:do:ifNone:" : "ct 10/3/2020 00:17",
+		"findDeltaFirstIndex:do:ifNone:" : "ct 10/3/2020 00:17",
+		"findDeltaIndex:do:ifNone:" : "ct 10/6/2020 13:52",
+		"transform:firstSatisfyingBinary:ifNone:" : "ct 10/2/2020 20:24" } }

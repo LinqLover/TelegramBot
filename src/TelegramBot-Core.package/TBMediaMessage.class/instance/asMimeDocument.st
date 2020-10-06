@@ -1,0 +1,4 @@
+converting
+asMimeDocument
+
+	^ self subclassResponsibility

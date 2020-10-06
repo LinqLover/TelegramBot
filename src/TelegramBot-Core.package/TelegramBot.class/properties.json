@@ -1,0 +1,19 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 21:12",
+	"instvars" : [
+		"token",
+		"latestUpdateId",
+		"latestUpdateTime",
+		"name",
+		"process",
+		"startUpContext" ],
+	"name" : "TelegramBot",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:50",
+	"instvars" : [
+		"contact",
+		"urlProtocol" ],
+	"name" : "TBTextContactLink",
+	"pools" : [
+		 ],
+	"super" : "TBTextURL",
+	"type" : "normal" }

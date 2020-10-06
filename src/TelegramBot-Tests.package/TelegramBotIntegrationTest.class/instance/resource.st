@@ -1,0 +1,4 @@
+accessing
+resource
+
+	^ TelegramBotTestResources current

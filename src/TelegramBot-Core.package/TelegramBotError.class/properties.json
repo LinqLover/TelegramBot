@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:59",
+	"instvars" : [
+		"errorCode" ],
+	"name" : "TelegramBotError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

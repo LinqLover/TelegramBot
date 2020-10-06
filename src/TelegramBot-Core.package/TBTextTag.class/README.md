@@ -1,0 +1,1 @@
+I represent a tag attribute in a TelegramBot message. The tag has a type, which can be a cashtag or a hashtag at the moment, and a string value.

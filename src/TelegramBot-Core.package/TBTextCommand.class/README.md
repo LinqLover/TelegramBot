@@ -1,0 +1,1 @@
+I represent a bot command in a TelegramBot message. A command consists of a command key (a Symbol) and a bot name which the command is addressed to.

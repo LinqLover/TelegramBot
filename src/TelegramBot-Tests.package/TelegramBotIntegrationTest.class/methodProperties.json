@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"resources" : "ct 10/1/2020 19:10" },
+	"instance" : {
+		"receiveClientMessages" : "ct 10/1/2020 19:08",
+		"resource" : "ct 10/1/2020 19:07",
+		"sendClientMessage:" : "ct 10/1/2020 19:08",
+		"setUp" : "ct 10/1/2020 18:11",
+		"setUpBot" : "ct 10/3/2020 16:03",
+		"setUpClient" : "ct 10/1/2020 19:08",
+		"shouldBotAsked:answer:" : "ct 10/3/2020 17:55",
+		"shouldBotAsked:answersSatisfy:" : "ct 10/3/2020 20:35",
+		"tearDown" : "ct 10/1/2020 19:13",
+		"tearDownClient" : "ct 9/15/2020 21:01",
+		"testEcho" : "ct 9/15/2020 19:55",
+		"testEchoCommand" : "ct 10/3/2020 15:30",
+		"testEchoPluggableAnswer" : "ct 10/3/2020 15:12",
+		"testSendMedia:" : "ct 10/1/2020 19:08",
+		"testSendMediaTypes" : "ct 10/1/2020 19:55",
+		"testUnicodeMessage" : "ct 10/1/2020 19:08" } }

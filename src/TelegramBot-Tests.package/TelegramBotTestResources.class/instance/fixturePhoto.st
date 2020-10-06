@@ -1,0 +1,4 @@
+fixtures
+fixturePhoto
+
+	^ Form squeakIcon

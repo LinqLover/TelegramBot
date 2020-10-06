@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:41",
+	"instvars" : [
+		"bytes" ],
+	"name" : "TBAnimationMessage",
+	"pools" : [
+		 ],
+	"super" : "TBMediaMessage",
+	"type" : "normal" }

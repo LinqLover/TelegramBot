@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asInputMediaWith:args:" : "ct 10/3/2020 16:37",
+		"asMimeDocument" : "ct 9/29/2020 16:55",
+		"content" : "ct 9/29/2020 17:07",
+		"editMediaFrom:with:" : "ct 9/29/2020 17:41",
+		"isMediaMessage" : "ct 9/29/2020 17:07",
+		"media" : "ct 9/29/2020 17:06",
+		"media:" : "ct 9/29/2020 17:41",
+		"sendWith:" : "ct 10/3/2020 16:37",
+		"textSelector" : "ct 9/29/2020 16:53",
+		"type" : "ct 9/29/2020 16:55" } }

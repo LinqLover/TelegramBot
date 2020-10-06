@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:37",
+	"instvars" : [
+		"block" ],
+	"name" : "TBInterrupt",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

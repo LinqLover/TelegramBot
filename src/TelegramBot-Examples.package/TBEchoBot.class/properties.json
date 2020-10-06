@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 21:00",
+	"instvars" : [
+		"answerBlock" ],
+	"name" : "TBEchoBot",
+	"pools" : [
+		 ],
+	"super" : "TelegramBot",
+	"type" : "normal" }

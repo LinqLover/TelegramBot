@@ -1,0 +1,15 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/3/2020 20:48",
+	"instvars" : [
+		"botName",
+		"key" ],
+	"name" : "TBTextCommand",
+	"pools" : [
+		 ],
+	"super" : "TBTextURL",
+	"type" : "normal" }

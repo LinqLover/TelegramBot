@@ -1,0 +1,1 @@
+I represent a media message in a chat with a TelegramBot. Media messages contain both a media object and a caption. This is an abstract class.

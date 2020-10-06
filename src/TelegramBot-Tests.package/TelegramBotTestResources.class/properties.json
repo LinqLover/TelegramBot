@@ -1,0 +1,19 @@
+{
+	"category" : "TelegramBot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 10/4/2020 15:21",
+	"instvars" : [
+		"botToken",
+		"botChatId",
+		"clientAuthCode",
+		"clientChatId",
+		"clientPhoneNumber",
+		"cleanUps" ],
+	"name" : "TelegramBotTestResources",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

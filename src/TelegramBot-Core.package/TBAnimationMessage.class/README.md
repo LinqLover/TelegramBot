@@ -1,0 +1,3 @@
+I represent a message in a TelegramBot chat that contains an animation.
+
+NOTE: The current design of this class, exposing the bytes of the animation stream, is not considered as a final solution. Maybe Squeak needs an extra class for this purpose? Or is this AnimatedImageMorph? Hm ...

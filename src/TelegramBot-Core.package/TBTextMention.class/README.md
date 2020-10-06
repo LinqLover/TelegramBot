@@ -1,0 +1,1 @@
+I represent a mention of a user in a TelegramBot message.
