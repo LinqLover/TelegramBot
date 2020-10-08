@@ -7,7 +7,7 @@ SmalltalkCISpec {
 			#load : [ #tests ]
 		}
 	],
-	#testing : [
+	#testing : {
 		#projects : [ 'BaselineOfTelegramBot' ]
-	]
+	}
 }
