@@ -18,9 +18,10 @@ jobs:
           smalltalk-version: ${{ matrix.smalltalk }}
       - run: mkdir tdlib
       - name: Decrypt large secret
-        run: ./.github/scripts/decrypt.sh assets/tests/testdb.sqlite.gpg tdlib/db.sqlite
+        run: ./.github/scripts/decrypt.sh assets/tests/tdlib.zip
         env:
           TB_TEST_ASSET_PASSPHRASE: ${{ secrets.TB_TEST_ASSET_PASSPHRASE }}
+      - run: unzip assets/tests/tdlib.zip
       - shell: bash
         run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
