@@ -14,7 +14,7 @@
 		"shouldBotAsked:answer:" : "ct 10/3/2020 17:55",
 		"shouldBotAsked:answersSatisfy:" : "ct 10/3/2020 20:35",
 		"tearDown" : "ct 10/1/2020 19:13",
-		"tearDownClient" : "ct 10/8/2020 17:57",
+		"tearDownClient" : "ct 10/8/2020 23:56",
 		"testEcho" : "ct 9/15/2020 19:55",
 		"testEchoCommand" : "ct 10/3/2020 15:30",
 		"testEchoPluggableAnswer" : "ct 10/3/2020 15:12",
