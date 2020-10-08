@@ -14,8 +14,12 @@ setUpClient
 			proc suspendedContext receiver == client]].
 	process terminate.
 	
-	client tbUpdateAll.
-	client authHandler isAuthorizationStateReady ifFalse: [
+	[[client authHandler isAuthorizationStateReady
+		ifFalse: [
+			client tbUpdateAll.
+			1 second wait];
+		yourself
+	] whileFalse] valueWithin: self clientAuthTimeout onTimeout: [
 		self error: 'Could not initialize client, authState is ' , client authHandler authState].
 	
 	self receiveClientMessages.
