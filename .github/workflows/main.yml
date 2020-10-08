@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false # DEBUG
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
+        os: [ ubuntu-latest ]
         smalltalk: [ Squeak64-Trunk ]
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
@@ -20,10 +20,13 @@ jobs:
         shell: bash
         run: |
           ./.github/scripts/decrypt.sh assets/tests/tdlib.zip.gpg
-          mkdir tdlib
           unzip assets/tests/tdlib.zip
         env:
           TB_TEST_ASSET_PASSPHRASE: ${{ secrets.TB_TEST_ASSET_PASSPHRASE }}
+      - name: Turnstyle (critical section)
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run test suite
         shell: bash
         run: smalltalkci -s ${{ matrix.smalltalk }}
