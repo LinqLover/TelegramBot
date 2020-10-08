@@ -5,6 +5,7 @@ installPreviewDependencies
 	self flag: #workaround. "As soon as the versions listed here get merged, this should be removed"
 	
 	dependencies := #(
+		(inbox 'WebClient-Core-ct.125') "UTF-8 conversion for multipart/form-data"
 		(inbox 'WebClient-Core-ct.127') "Moves WebClient utility methods to instance side"
 		(inbox 'Collections-ct.915') "Adds accessor and constructor for TextURL"
 		
