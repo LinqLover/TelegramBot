@@ -1,4 +1,4 @@
 accessing
 defaultTimeout
 
-	^ 30 seconds
+	^ 30 "seconds"

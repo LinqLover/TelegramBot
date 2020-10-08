@@ -4,7 +4,7 @@
 	"instance" : {
 		"clientAuthTimeout" : "ct 10/8/2020 03:32",
 		"createClient" : "ct 10/8/2020 16:31",
-		"defaultTimeout" : "ct 10/8/2020 23:31",
+		"defaultTimeout" : "ct 10/8/2020 23:49",
 		"receiveClientMessages" : "ct 10/1/2020 19:08",
 		"resource" : "ct 10/1/2020 19:07",
 		"sendClientMessage:" : "ct 10/1/2020 19:08",
