@@ -8,6 +8,6 @@ SmalltalkCISpec {
 		}
 	],
 	#testing : {
-		#projects : [ 'BaselineOfTelegramBot' ]
+		#packages : [ 'TelegramBot-Tests' ]
 	}
 }
