@@ -26,4 +26,4 @@ jobs:
           TB_TEST_CLIENT_NUMBER: ${{ secrets.TB_TEST_CLIENT_NUMBER }}
           TB_TEST_CLIENT_AUTH_CODE: ${{ secrets.TB_TEST_CLIENT_AUTH_CODE }}
           TB_TEST_CLIENT_CHAT_ID: ${{ secrets.TB_TEST_CLIENT_CHAT_ID }}
-          TB_TEST_BOT_CHAT_ID: ${{ TB_TEST_BOT_CHAT_ID }}
+          TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
