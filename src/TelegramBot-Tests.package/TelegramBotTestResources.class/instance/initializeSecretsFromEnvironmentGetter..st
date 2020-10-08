@@ -1,9 +1,14 @@
 running
 initializeSecretsFromEnvironmentGetter: getter
 
-	botToken := getter value: 'TB_TEST_BOT_TOKEN'.
+	| get |
+	get := [:key |
+		(getter value: key) ifNil: [
+			self error: ('Secret <1p> not specied' expandMacrosWith: key)]].
+
+	botToken := get value: 'TB_TEST_BOT_TOKEN'.
 	
-	clientPhoneNumber := getter value: 'TB_TEST_CLIENT_NUMBER'.
-	clientAuthCode := getter value: 'TB_TEST_CLIENT_AUTH_CODE'.
-	clientChatId := getter value: 'TB_TEST_CLIENT_CHAT_ID'.
-	botChatId := getter value: 'TB_TEST_BOT_CHAT_ID'.
+	clientPhoneNumber := get value: 'TB_TEST_CLIENT_NUMBER'.
+	clientAuthCode := get value: 'TB_TEST_CLIENT_AUTH_CODE'.
+	clientChatId := get value: 'TB_TEST_CLIENT_CHAT_ID'.
+	botChatId := get value: 'TB_TEST_BOT_CHAT_ID'.
