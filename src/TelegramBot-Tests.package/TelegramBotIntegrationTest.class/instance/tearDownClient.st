@@ -1,4 +1,4 @@
 running
 tearDownClient
 
-	client client free.
+	[client client free] ifError: [].
