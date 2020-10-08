@@ -16,6 +16,11 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
+      - run: mkdir tdlib
+      - name: Decrypt large secret
+        run: ./.github/scripts/decrypt.sh assets/tests/testdb.sqlite.gpg tdlib/db.sqlite
+        env:
+          TB_TEST_ASSET_PASSPHRASE: ${{ secrets.TB_TEST_ASSET_PASSPHRASE }}
       - shell: bash
         run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
