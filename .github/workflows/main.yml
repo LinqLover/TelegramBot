@@ -15,9 +15,6 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
-      - run: bash -c 'echo ${#TB_TEST_BOT_TOKEN}' # DEBUG
-        env:
-          TB_TEST_BOT_TOKEN: ${{ secrets.TB_TEST_BOT_TOKEN }}
       - shell: bash
         run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
