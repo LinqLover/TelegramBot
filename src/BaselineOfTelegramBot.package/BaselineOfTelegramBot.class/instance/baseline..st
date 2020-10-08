@@ -23,7 +23,7 @@ baseline: spec
 			package: 'TelegramBot-Examples' with: [
 				spec requires: #(minimal)];
 			package: 'TelegramBot-Tests' with: [
-				spec requires: #(default 'Telegram-Client')].
+				spec requires: #(default 'TelegramClient')].
 		
 		"groups"
 		spec
