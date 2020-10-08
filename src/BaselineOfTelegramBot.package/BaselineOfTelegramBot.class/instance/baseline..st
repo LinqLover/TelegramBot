@@ -10,14 +10,15 @@ baseline: spec
 			baseline: 'TelegramClient' with: [
 				spec
 					"repository: 'github://hpi-swa-teaching/TelegramClient/packages';"
-					flag: #todo; "Using fork until #311, #312 have been merged"
+					flag: #workaround; "Using fork until #311, #312 have been merged"
 					repository: 'github://LinqLover/TelegramClient/packages';
 					loads: 'TelegramClient-Core'].
 		
 		"packages"
 		spec
 			package: 'TelegramBot-Core' with: [
-				spec requires: #('JSON')];
+				spec requires: #('JSON').
+				spec postLoadDoIt: #installPreviewDependencies];
 			package: 'TelegramBot-Support-ShoutAttribute' with: [
 				"Support for the ShoutAttribute changeset which has not yet been added to Trunk: http://forum.world.st/Changeset-ShoutAttribute-amp-semi-styling-td5106776.html"];
 			package: 'TelegramBot-Examples' with: [
