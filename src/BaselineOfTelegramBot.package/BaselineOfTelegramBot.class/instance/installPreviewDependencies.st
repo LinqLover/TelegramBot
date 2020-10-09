@@ -8,6 +8,7 @@ installPreviewDependencies
 		(inbox 'WebClient-Core-ct.125') "UTF-8 conversion for multipart/form-data"
 		(inbox 'WebClient-Core-ct.127') "Moves WebClient utility methods to instance side"
 		(inbox 'Collections-ct.915') "Adds accessor and constructor for TextURL"
+		(inbox 'Kernel-ct.1303') "#on:satisfying:do:"
 		(inbox 'Graphics-ct.443') "storing an animated GIF file via AnimatedGIFReadWriter"
 		
 		"Deprecate SyntaxErrorNotification >> #errorMessage"
