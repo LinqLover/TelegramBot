@@ -32,6 +32,7 @@ jobs:
         run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # for coverage reports
           TB_TEST_BOT_TOKEN: ${{ secrets.TB_TEST_BOT_TOKEN }}
           TB_TEST_CLIENT_NUMBER: ${{ secrets.TB_TEST_CLIENT_NUMBER }}
           TB_TEST_CLIENT_AUTH_CODE: ${{ secrets.TB_TEST_CLIENT_AUTH_CODE }}
