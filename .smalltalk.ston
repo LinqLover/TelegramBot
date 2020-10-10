@@ -8,6 +8,9 @@ SmalltalkCISpec {
 		}
 	],
 	#testing : {
-		#packages : [ 'TelegramBot-Tests' ]
+		#packages : [ 'TelegramBot-Tests' ],
+		#coverage : {
+			#packages : [ 'TelegramBot-Core' ]
+		}
 	}
 }
