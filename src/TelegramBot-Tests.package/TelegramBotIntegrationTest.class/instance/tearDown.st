@@ -1,5 +1,6 @@
 running
 tearDown
 
-	[self tearDownClient] ensure: [
+	[self tearDownClient.
+	self tearDownBot] ensure: [
 		super tearDown]

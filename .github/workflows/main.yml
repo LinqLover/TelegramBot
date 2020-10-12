@@ -1,0 +1,40 @@
+name: smalltalkCI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false # DEBUG
+      matrix:
+        os: [ ubuntu-latest ]
+        smalltalk: [ Squeak64-Trunk ]
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-version: ${{ matrix.smalltalk }}
+      - name: Unpack tdlib test database
+        shell: bash
+        run: |
+          ./.github/scripts/decrypt.sh assets/tests/tdlib.zip.gpg
+          unzip assets/tests/tdlib.zip
+        env:
+          TB_TEST_ASSET_PASSPHRASE: ${{ secrets.TB_TEST_ASSET_PASSPHRASE }}
+      - name: Turnstyle (critical section)
+        uses: softprops/turnstyle@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run test suite
+        shell: bash
+        run: smalltalkci -s ${{ matrix.smalltalk }}
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # for coverage reports
+          TB_TEST_BOT_TOKEN: ${{ secrets.TB_TEST_BOT_TOKEN }}
+          TB_TEST_CLIENT_NUMBER: ${{ secrets.TB_TEST_CLIENT_NUMBER }}
+          TB_TEST_CLIENT_AUTH_CODE: ${{ secrets.TB_TEST_CLIENT_AUTH_CODE }}
+          TB_TEST_CLIENT_CHAT_ID: ${{ secrets.TB_TEST_CLIENT_CHAT_ID }}
+          TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}

@@ -16,6 +16,6 @@ processUpdatesLimitedTo: maxUpdates chunkSize: chunkSize do: aBlock timeout: tim
 		latestUpdateTime := DateAndTime now.
 		^ self].
 	updates do: aBlock.
-	latestUpdateId := updates last updateId]
+	latestUpdateId := (updates collect: #updateId) max]
 		doWhileTrue: [(updateCount := updateCount + updates size) < maxUpdates].
 	^ self error: 'Incoming update count exceeded limit'

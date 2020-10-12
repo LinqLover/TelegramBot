@@ -5,7 +5,7 @@ deferDuring: aBlock when: anotherBlock
 	deferred := nil.
 	^ [aBlock
 		on: self
-		when: anotherBlock
+		satisfying: anotherBlock
 		do: [:interrupt |
 			deferred := interrupt.
 			interrupt resume]]

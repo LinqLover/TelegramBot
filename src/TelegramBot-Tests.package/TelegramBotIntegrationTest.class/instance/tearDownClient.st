@@ -1,4 +1,5 @@
 running
 tearDownClient
 
-	client client free.
+	[self receiveClientMessages] ifError: []. "throw up 🤮"
+	[client client free] ifError: [].

@@ -1,4 +1,4 @@
 fixtures
 fixturePhoto
 
-	^ Form squeakIcon
+	^ MenuIcons squeakIcon

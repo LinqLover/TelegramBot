@@ -1,4 +1,0 @@
-secrets - client
-clientPhoneNumber
-
-	^ clientPhoneNumber
