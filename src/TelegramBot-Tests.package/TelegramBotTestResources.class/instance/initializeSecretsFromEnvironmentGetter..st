@@ -8,7 +8,5 @@ initializeSecretsFromEnvironmentGetter: getter
 
 	botToken := get value: 'TB_TEST_BOT_TOKEN'.
 	
-	clientPhoneNumber := get value: 'TB_TEST_CLIENT_NUMBER'.
-	clientAuthCode := get value: 'TB_TEST_CLIENT_AUTH_CODE'.
 	clientChatId := (get value: 'TB_TEST_CLIENT_CHAT_ID') asInteger.
 	botChatId := (get value: 'TB_TEST_BOT_CHAT_ID') asInteger.
