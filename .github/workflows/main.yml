@@ -45,10 +45,8 @@ jobs:
       #    TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
       - name: Send email on failure
         if: ${{ always() }} #debug #${{ github.event_name == 'schedule' && failure() }}
-        uses: mmeisels/action-send-an-email@v1
+        uses: mmichailidis/sendgrid-mail-action@v1.0
         with:
-          emailToAddress: ${{ secrets.SENDGRID_RECEIVER }}
-          emailFromAddress: ${{ secrets.SENDGRID_RECEIVER }}
-          emailBody: 'GitHub CI job failed for TelegramClient'
-        env:
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          sendgrid-token: ${{ secrets.SENDGRID_API_KEY }}
+          mail: ${{ secrets.SENDGRID_RECEIVER }}
+          subject: 'GitHub CI job failed for TelegramClient'
