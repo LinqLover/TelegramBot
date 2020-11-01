@@ -43,3 +43,12 @@ jobs:
           TB_TEST_CLIENT_AUTH_CODE: ${{ secrets.TB_TEST_CLIENT_AUTH_CODE }}
           TB_TEST_CLIENT_CHAT_ID: ${{ secrets.TB_TEST_CLIENT_CHAT_ID }}
           TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
+      - name: Send email on failure
+        if: ${{ github.event_name == 'schedule' && failure() }}
+        uses: mmeisels/action-send-an-email-@v1
+        with:
+          emailToAddress: ${{ secrets.SENDGRID_RECEIVER }}
+          emailFromAddress: ${{ secrets.SENDGRID_RECEIVER }}
+          emailBody: 'GitHub CI job failed for TelegramClient'
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
