@@ -45,7 +45,7 @@ jobs:
           TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
       - name: Send email on failure
         if: ${{ github.event_name == 'schedule' && failure() }}
-        uses: mmeisels/action-send-an-email-@v1
+        uses: mmeisels/actions-email@v1.1
         with:
           emailToAddress: ${{ secrets.SENDGRID_RECEIVER }}
           emailFromAddress: ${{ secrets.SENDGRID_RECEIVER }}
