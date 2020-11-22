@@ -6,4 +6,4 @@ depChangeset: urlString
 	^ url fileName -> [
 		| contents |
 		contents := url retrieveContents.
-		contents fileIn]
+		contents contentStream fileIn]
