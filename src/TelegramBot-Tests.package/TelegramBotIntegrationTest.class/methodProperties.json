@@ -6,6 +6,7 @@
 		"comparingStringBetween:and:" : "ct 10/9/2020 16:29",
 		"createClient" : "ct 10/8/2020 16:31",
 		"defaultTimeout" : "ct 10/8/2020 23:49",
+		"expectedFailures" : "ct 11/22/2020 20:05",
 		"receiveClientMessages" : "ct 10/1/2020 19:08",
 		"resource" : "ct 10/1/2020 19:07",
 		"sendClientMessage:" : "ct 10/1/2020 19:08",
