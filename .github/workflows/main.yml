@@ -47,11 +47,11 @@ jobs:
         if: ${{ always() }} #debug #${{ github.event_name == 'schedule' && failure() }}
         uses: dawidd6/action-send-mail@v2
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{secrets.SMTP_USERNAME}}
-          password: ${{secrets.SMTP_PASSWORD}}
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
           subject: GitHub CI failed for TelegramClient
-          body: Build job of ${{github.repository}} failed!
-          to: ${{secrets.SENDGRID_RECEIVER}}
+          body: Build job of ${{ github.repository }} failed!
+          to: ${{ secrets.MAIL_RECEIVER }}
           from: GitHub CI
