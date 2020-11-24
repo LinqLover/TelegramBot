@@ -42,7 +42,7 @@ jobs:
           TB_TEST_CLIENT_CHAT_ID: ${{ secrets.TB_TEST_CLIENT_CHAT_ID }}
           TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
       - name: Send email on failure
-        #debug#if: ${{ github.event_name == 'schedule' && failure() }}
+        if: ${{ github.event_name == 'schedule' && failure() }}
         uses: dawidd6/action-send-mail@v2
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
