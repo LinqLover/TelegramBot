@@ -1,6 +1,11 @@
 name: smalltalkCI
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * 1"
+
 
 jobs:
   build:
@@ -36,3 +41,15 @@ jobs:
           TB_TEST_BOT_TOKEN: ${{ secrets.TB_TEST_BOT_TOKEN }}
           TB_TEST_CLIENT_CHAT_ID: ${{ secrets.TB_TEST_CLIENT_CHAT_ID }}
           TB_TEST_BOT_CHAT_ID: ${{ secrets.TB_TEST_BOT_CHAT_ID }}
+      - name: Send email on failure
+        if: ${{ github.event_name == 'schedule' && failure() }}
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: GitHub Actions failed for ${{ github.repository }}
+          body: Build job of ${{ github.repository }} failed! See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} for more information.
+          to: ${{ secrets.MAIL_RECEIVER }}
+          from: GitHub Actions
