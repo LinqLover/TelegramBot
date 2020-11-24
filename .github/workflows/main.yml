@@ -49,7 +49,7 @@ jobs:
           server_port: ${{ secrets.SMTP_PORT }}
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
-          subject: GitHub CI failed for ${{ github.repository }}
+          subject: GitHub Actions failed for ${{ github.repository }}
           body: Build job of ${{ github.repository }} failed! See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} for more information.
           to: ${{ secrets.MAIL_RECEIVER }}
-          from: GitHub CI
+          from: GitHub Actions
