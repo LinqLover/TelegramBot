@@ -1,5 +1,4 @@
 signaling
-signal: aBlock
+signal: anInterrupt
 
-	^ (self forBlock: aBlock)
-		signal
+	^ (self for: anInterrupt) signal

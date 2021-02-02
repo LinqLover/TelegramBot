@@ -1,12 +1,9 @@
 support
-deferDuring: aBlock when: anotherBlock
+deferDuring: aBlock
 
 	| deferred |
 	deferred := nil.
-	^ [aBlock
-		on: self
-		satisfying: anotherBlock
-		do: [:interrupt |
+	^ [aBlock on: self do: [:interrupt |
 			deferred := interrupt.
 			interrupt resume]]
 		ensure: [deferred ifNotNil: #signal]
