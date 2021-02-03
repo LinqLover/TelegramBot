@@ -1,1 +1,1 @@
-I am an interrupt exception that is signaled to inject some logic into a process using #debugException: and can be defered using #deferDuring:when:.
+I am an interrupt exception that is signaled to handle an interrupt request. Unless handled explicitly, I will evaluate the requested interrupt eventually. Instead of raising me directly, users should preferably signal a soft TBInterruptRequest.

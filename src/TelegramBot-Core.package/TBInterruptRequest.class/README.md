@@ -1,0 +1,1 @@
+I am an request exception that is signaled to inject some logic into a process using #debugException: and can be processed using #value. Unless handled explicitly, I will raise a TBInterrupt instance which will process my requested interrupt eventually.

@@ -7,16 +7,13 @@ basicRequest: url timeout: timeout fields: fields
 			ifTrue: [value asJsonString]
 			ifFalse: [value]].
 	
+	"Run the web request atomically against interrupts to preserve it from damage after the connection has been suspended."
 	response := TBInterrupt
 		deferDuring: [WebClient httpDo: [:client |
 			client timeout: (timeout + self defaultTimeout) asSeconds.
 			actualFields
 				ifNotEmpty: [client httpPost: url multipartFields: actualFields]
-				ifEmpty: [client httpGet: url]]]
-		when: [:interrupt |
-			(interrupt signalerContext findContextSuchThat: [:ctxt |
-				(ctxt receiver isKindOf: DelayWaitTimeout) and: [
-					ctxt selector = #wait]]) isNil].
+				ifEmpty: [client httpGet: url]]].
 	
 	self flag: #todo.
 	"Handle 'SocketPrimitiveFailed: primSocketReceiveDataAvailable:' + NoNetworkError+ ConnectionTimedOut here after host system shutdown?"

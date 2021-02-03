@@ -2,13 +2,12 @@ requests
 requestUpdates: args
 
 	| allowedUpdates limit result |
-	allowedUpdates := args at: #allowedUpdates ifAbsent: [].
+	allowedUpdates := args at: #allowedUpdates ifAbsent: [#()].
 	limit := args at: #limit ifAbsent: [].
 	
 	result := OrderedCollection new.
-	updates removeAllSuchThat: [:update |
-		result size >= limit ifTrue: [^ result].
-		(allowedUpdates notNil ==> [allowedUpdates includes: update key])
-			ifTrue: [result addLast: update value];
-			yourself].
+	[result size < limit and: [updates isEmpty]] whileFalse: [
+		(allowedUpdates notEmpty ==> [allowedUpdates includes: updates peek key])
+			ifFalse: [^ result].
+		result addLast: updates nextOrNil].
 	^ result
