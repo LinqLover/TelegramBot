@@ -8,6 +8,6 @@ spawnNewProcess
 		[self doOneCycle. Processor yield] repeat.
 	] newProcess
 		name: ('Telegram Bot process for {1}' format: {self name});
-		priority: Processor systemBackgroundPriority;
+		priority: Processor userBackgroundPriority;
 		resume;
 		yourself
