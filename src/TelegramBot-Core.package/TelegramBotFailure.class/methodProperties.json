@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"signalForException:" : "ct 2/3/2021 00:45" },
+	"instance" : {
+		"defaultAction" : "ct 2/3/2021 01:09",
+		"defaultActionWithDelay" : "ct 2/3/2021 01:10",
+		"exception" : "ct 2/3/2021 00:45",
+		"exception:" : "ct 2/3/2021 00:45",
+		"messageText" : "ct 2/3/2021 00:49",
+		"networkWaitTime" : "ct 2/3/2021 01:03" } }

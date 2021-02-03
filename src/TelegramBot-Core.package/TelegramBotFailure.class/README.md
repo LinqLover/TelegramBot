@@ -1,0 +1,1 @@
+I wrap an error that has been raised from a TelegramBot process. My purpose is to notify about the problem only instead of crashing the bot. Unless handled explicitly, I make my way to the ToolSet as a usual warning, decorated with a certain delay for special connection errors.
