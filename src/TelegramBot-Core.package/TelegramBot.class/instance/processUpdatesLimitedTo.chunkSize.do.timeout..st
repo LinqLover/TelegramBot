@@ -11,7 +11,11 @@ processUpdatesLimitedTo: maxUpdates chunkSize: chunkSize do: aBlock timeout: tim
 		yourself.
 	latestUpdateId ifNotNil: [:id |
 		args at: #offset put: id + 1].
-	updates := self request: 'getUpdates' timeout: timeout args: args.
+	updates := [self request: 'getUpdates' timeout: timeout args: args]
+		on: TBInterruptRequest do: [:interrupt |
+			"This is a polling query. Instead of defering the interrupt until the query has timed out, just abort the query here. Updates won't be lost but returned by the API on the next attempt since latestUpdateId has not yet been updated."
+			interrupt value.
+			^ self].
 	updates ifEmpty: [
 		latestUpdateTime := DateAndTime now.
 		^ self].

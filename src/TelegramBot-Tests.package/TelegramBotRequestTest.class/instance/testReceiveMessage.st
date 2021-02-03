@@ -6,16 +6,8 @@ testReceiveMessage
 	messageId := 43.
 	text := 'Hello Squeak'.
 	
-	mockBot handleUpdate: (JsonObject new
-		at: #message put: (JsonObject new
-			at: #messageId put: messageId;
-			at: #date put: DateAndTime now asUnixTime;
-			at: #chat put: (JsonObject new
-				at: #id put: chatId;
-				yourself);
-			at: #text put: text;
-			yourself);
-		yourself).
+	mockBot handleUpdate: (
+		self mockMessageFor: text id: messageId chatId: chatId).
 	
 	self assert: mockBot receivedMessages size = 1.
 	message := mockBot receivedMessages first.

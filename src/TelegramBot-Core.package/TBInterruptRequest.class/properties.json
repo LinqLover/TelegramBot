@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ct 2/3/2021 00:36",
+	"commentStamp" : "ct 2/3/2021 00:33",
 	"instvars" : [
-		"interrupt" ],
-	"name" : "TBInterrupt",
+		"block" ],
+	"name" : "TBInterruptRequest",
 	"pools" : [
 		 ],
 	"super" : "Exception",

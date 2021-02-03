@@ -4,5 +4,5 @@ initialize
 	super initialize.
 	
 	requests := OrderedCollection new.
-	updates := OrderedCollection new.
+	updates := SharedQueue new.
 	receivedMessages := OrderedCollection new.

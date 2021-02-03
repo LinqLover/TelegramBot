@@ -1,4 +1,4 @@
 priv handling
 defaultAction
 
-	^ self interrupt value
+	^ TBInterrupt signal: self
