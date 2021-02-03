@@ -2,11 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"assertProcessInvariantDuring:" : "ct 2/3/2021 01:28",
+		"mockMessageFor:id:chatId:" : "ct 2/3/2021 01:44",
 		"resource" : "ct 10/1/2020 19:09",
 		"resources" : "ct 10/1/2020 19:05",
 		"setUp" : "ct 10/1/2020 19:08",
 		"testParseCommand" : "ct 10/3/2020 18:33",
-		"testReceiveMessage" : "ct 10/1/2020 21:45",
+		"testProcess" : "ct 2/3/2021 02:13",
+		"testReceiveMessage" : "ct 2/3/2021 01:21",
 		"testSendAnimation" : "ct 10/1/2020 20:34",
 		"testSendAudio" : "ct 10/9/2020 18:21",
 		"testSendDocument" : "ct 10/1/2020 21:14",
