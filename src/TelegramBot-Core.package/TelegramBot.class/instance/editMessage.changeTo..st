@@ -1,9 +1,14 @@
 message sending
 editMessage: oldMessage changeTo: newMessage
 
-	(oldMessage text ~= newMessage text or: [oldMessage truncated ~= newMessage truncated]) ifTrue: [
-		oldMessage truncated: newMessage truncated.
-		self editMessage: oldMessage text: newMessage text].
+	(oldMessage text ~= newMessage text
+		or: [oldMessage truncated ~= newMessage truncated]
+		or: [oldMessage disableWebPagePreview ~= newMessage disableWebPagePreview])
+		ifTrue: [
+			oldMessage
+				truncated: newMessage truncated;
+				disableWebPagePreview: newMessage disableWebPagePreview.
+			self editMessage: oldMessage text: newMessage text].
 	
 	((oldMessage isMediaMessage or: [newMessage isMediaMessage])
 		and: [oldMessage content ~= newMessage content])

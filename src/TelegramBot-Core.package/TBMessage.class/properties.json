@@ -10,7 +10,8 @@
 		"chat",
 		"referenceMessage",
 		"truncated",
-		"messageId" ],
+		"messageId",
+		"options" ],
 	"name" : "TBMessage",
 	"pools" : [
 		 ],
