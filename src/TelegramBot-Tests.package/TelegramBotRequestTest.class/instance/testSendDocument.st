@@ -6,9 +6,7 @@ testSendDocument
 	chatId := self resource botChatId.
 	
 	mockBot sendDocument: file toChat: chatId.
-	
-	self assert: mockBot requests size = 1.
-	request := mockBot requests first.
+	request := self receiveMockBotRequest.
 	
 	self assert: 'sendDocument' equals: request key.
 	self assert: chatId equals: request value chatId.

@@ -7,9 +7,7 @@ testSendMessageWithCaption
 	chatId := self resource botChatId.
 	
 	mockBot sendPhoto: form withCaption: caption toChat: chatId.
-	
-	self assert: mockBot requests size = 1.
-	request := mockBot requests first.
+	request := self receiveMockBotRequest.
 	
 	self
 		assert: '<b>foo</b>' equals: request value caption;
