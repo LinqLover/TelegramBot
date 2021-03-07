@@ -9,8 +9,7 @@ asInputMediaWith: aBot args: args
 	args at: self type put: document.
 	media at: #media put: ('attach://{1}' format: {self type}).
 	
-	self text ifNotNil: [:stringOrText |
-		"Old text needs to be attached again or it will be lost"
-		self addText: stringOrText to: media with: aBot].
+	"Existing text needs to be attached again to prevent it from removal"
+	self addText: self text to: media with: aBot.
 	
 	^ media
