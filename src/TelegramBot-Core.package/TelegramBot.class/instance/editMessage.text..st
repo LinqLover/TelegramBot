@@ -1,4 +1,5 @@
 message sending
 editMessage: aMessage text: aStringOrText
 
-	^ aMessage editText: aStringOrText with: self
+	^ self sendMessage: aMessage do: [
+		aMessage editText: aStringOrText with: self]

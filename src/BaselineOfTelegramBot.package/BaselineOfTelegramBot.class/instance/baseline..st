@@ -9,9 +9,7 @@ baseline: spec
 				spec repository: 'https://www.squeaksource.com/PostgresV3'];
 			baseline: 'TelegramClient' with: [
 				spec
-					"repository: 'github://hpi-swa-teaching/TelegramClient/packages';"
-					flag: #workaround; "Using fork until #311, #312 have been merged"
-					repository: 'github://LinqLover/TelegramClient/packages';
+					repository: 'github://hpi-swa-teaching/TelegramClient/packages';
 					loads: 'TelegramClient-Core'].
 		
 		"packages"

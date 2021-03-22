@@ -1,4 +1,5 @@
 message sending
 sendMessage: aMessage toChat: aChat
 
-	^ (aMessage chat: aChat) sendWith: self
+	^ self sendMessage: aMessage do: [
+		(aMessage chat: aChat) sendWith: self]
