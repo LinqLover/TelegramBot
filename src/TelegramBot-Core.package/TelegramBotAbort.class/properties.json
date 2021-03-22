@@ -1,0 +1,14 @@
+{
+	"category" : "TelegramBot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 3/22/2021 14:37",
+	"instvars" : [
+		"scope" ],
+	"name" : "TelegramBotAbort",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

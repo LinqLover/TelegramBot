@@ -1,0 +1,1 @@
+I represent the request to abort a part of the current control flow that runs in the specified scope. Scopes can be defined by using my class side message #inScope:do:. If no scope is defined, this exception will be ignored and the execution will be resumed.

@@ -1,4 +1,5 @@
 message sending
 sendMessage: aMessage
 
-	^ aMessage sendWith: self
+	^ self sendMessage: aMessage do: [
+		aMessage sendWith: self]
