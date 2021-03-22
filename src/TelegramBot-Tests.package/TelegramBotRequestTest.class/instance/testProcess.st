@@ -15,11 +15,11 @@ testProcess
 		Processor yield.
 		self assert: 1 equals: mockBot receivedMessages size.
 		
-		mockBot shutDown: true.
+		mockBot shutDown: false.
 		[mockBot addUpdate: (self mockMessageFor: text id: 2 chatId: chatId).
 		Processor yield.
 		self assert: 1 equals: mockBot receivedMessages size]
-			ensure: [mockBot startUp: true].
+			ensure: [mockBot startUp: false].
 		Processor yield; yield; yield. "compensate the magic in Process>>pvtSignal:list:"
 		self assert: 2 equals: mockBot receivedMessages size.
 		
