@@ -6,3 +6,4 @@ initialize
 	requests := OrderedCollection new.
 	updates := SharedQueue new.
 	receivedMessages := OrderedCollection new.
+	blockedMessages := OrderedCollection new.

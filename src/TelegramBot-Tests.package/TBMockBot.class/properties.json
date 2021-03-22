@@ -8,7 +8,8 @@
 	"instvars" : [
 		"requests",
 		"updates",
-		"receivedMessages" ],
+		"receivedMessages",
+		"blockedMessages" ],
 	"name" : "TBMockBot",
 	"pools" : [
 		 ],
