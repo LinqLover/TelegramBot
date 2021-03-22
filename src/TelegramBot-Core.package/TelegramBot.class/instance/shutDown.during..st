@@ -3,8 +3,6 @@ shutDown: quitting during: aBlock
 	"Shut down the receiver while the system and shut down and started up during aBlock. If a process is running, give it a chance to process already retrieved updates and then suspend it."
 
 	| semaphore blocker |
-	quitting ifFalse: [
-		^ aBlock value].
 	(process isNil
 		or: [process isSuspended]
 		or: [process isTerminated]
