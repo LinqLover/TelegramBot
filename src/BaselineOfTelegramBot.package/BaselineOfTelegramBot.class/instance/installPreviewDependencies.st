@@ -12,7 +12,6 @@ installPreviewDependencies
 		self depInbox: 'Collections-ct.915'. "Adds accessor and constructor for TextURL"
 		self depInbox: 'Kernel-ct.1303'. "#on:satisfying:do:"
 		self depInbox: 'Graphics-ct.443'. "storing an animated GIF file via AnimatedGIFReadWriter"
-		self depInbox: 'MorphicExtras-ct.284'. "AnimatedImageMorph >>#delays"
 		self depInbox: 'Collections-ct.926'. "HTML conversion for TextURL"
 		
 		"Deprecate SyntaxErrorNotification >> #errorMessage"
